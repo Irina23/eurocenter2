@@ -6,13 +6,23 @@ html(lang='ru')
 		include ./partials/head.jade
 
 	body
+		.container.home
 
-		include ./partials/noscript.jade
-		include ./partials/navigation.jade
+			include ./partials/noscript.jade
+			include ./partials/navigation.jade
+			.block_servives
+				.item(style="background: url(../img/content/services1.jpg) no-repeat center")
+					.text Работа за рубежем
+					a.readmore(href="#") Подробнее
+				.item(style="background: url(../img/content/services2.jpg) no-repeat center")
+					.text Визовые услуги
+					a.readmore(href="#") Подробнее
+				.item(style="background: url(../img/content/services3.jpg) no-repeat center")
+					.text Услуги для бизнеса
+					a.readmore(href="#") Подробнее
 
-		//- Add your code here
 
-		include ./partials/footer.jade
-		include ./partials/modals.jade
+			include ./partials/footer.jade
+			include ./partials/modals.jade
 
 	include ./partials/scripts.jade
