@@ -1,0 +1,45 @@
+@import _mixins
+
+.block_contact
+  padding: 45px 65px 50px 30px
+  width:  ( 100% / 3 )
+  h3
+    text-transform: uppercase
+    line-height: 1em
+    margin-bottom: 25px
+    font-size: 24px
+    font-weight: normal
+  .link_contact
+    text-transform: uppercase
+    text-decoration: none
+    font-size: 16px
+    line-height: 1em
+    border: 1px solid #000
+    color: $base-font-color
+    padding: 7px 15px
+    transition: all 0.35s
+    &:hover
+      transition: all 0.35s
+      background: #000
+      color: #fff
+
+  .overflow-text
+    margin-bottom: 20px
+    p
+      font-size: 14px
+      line-height: 1.8em
+      a
+        color: $main-color-hover
+        font-size: 14px
+        font-family: 'RobotoCondensed-Light', sans-serif
+        &.phone
+          font-size: 20px
+          text-decoration: none
+    address
+      font-family: 'RobotoCondensed-Light', sans-serif
+      font-size: 14px
+      display: inline-block
+      vertical-align: middle
+      font-style: normal
+      span
+        font-family: "RobotoCondensed-Regular", sans-serif

@@ -1,3 +1,27 @@
 @import _mixins
 
 .footer
+  padding: 35px 65px
+
+  .copyright
+    width: 30%
+    font-size: 14px
+    line-height: 1em
+    text-transform: uppercase
+    vertical-align: middle
+
+  .menu
+    width: 70%
+    text-align: right
+    li
+      display: inline-block
+      vertical-align: middle
+      margin: 0 15px
+      &:last-child
+        margin-right: 0
+      a
+        font-size: 14px
+        line-height: 14px
+        text-transform: uppercase
+        text-decoration: none
+        color: $base-font-color
