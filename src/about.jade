@@ -1,0 +1,24 @@
+doctype html
+html(lang='ru')
+	head
+		title Про "Євроцентр - Україна"
+
+		include ./partials/head.jade
+
+	body
+		.container.about
+
+			include ./partials/noscript.jade
+			include ./partials/navigation.jade
+			.inline-layout
+				include ./partials/about_text.jade
+
+				.sidebar
+
+					include ./partials/sidebar_services.jade
+					include ./partials/last_news.jade
+
+			include ./partials/footer.jade
+			include ./partials/modals.jade
+
+	include ./partials/scripts.jade
