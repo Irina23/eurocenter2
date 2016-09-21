@@ -1,5 +1,4 @@
 - header
 - vizovie yslygi page
-- vacancies page
 - rabota_za_rybegem page
 - Business services page
