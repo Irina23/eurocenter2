@@ -3,29 +3,8 @@ if ($.browser.mobile) $('body').addClass('mobile');
 if ($.browser.safari) $('body').addClass('safari');
 if ($.browser.iphone || $.browser.ipad || $.browser.ipod ) $('body').addClass('ios');
 
-$(document).on('ready', function () {
-
-
-	var $window = $(window),
-		windowWidth = $window.width(),
-		windowHeight = $window.height(),
-		bodyHeight = $('body').height();
-
-
-		// resize
-		$window.on('resize', function () {
-
-			windowWidth = $window.width();
-			windowHeight = $window.height();
-			bodyHeight = $('body').height();
-
-		});
-
-
-
-
-});
-$(window).on('load', function () {
+$(document).ready( function () {
+	$("form").validate();
 	//slider home
 	$('.slider_home .owl-carousel').owlCarousel({
 		loop:true,
@@ -44,4 +23,8 @@ $(window).on('load', function () {
 			}
 		}
 	});
+});
+$(window).on('load', function () {
+
+
 });
