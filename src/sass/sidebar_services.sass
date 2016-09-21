@@ -1,29 +1,32 @@
 @import _mixins
 
-.block_servives
-  margin-bottom: 30px
-  .item
-    margin-bottom: 20px
-    height: 200px
-    &:last-child
-      margin-bottom: 0
-    > div > div
-      .text
-        font-size: 24px
-        margin-bottom: 25px
-      .readmore
-        font-size: 16px
-        background: none
-        padding: 8px 0
-        text-align: center
-        border: 1px solid #fff
-        &:hover
-          background: $main-color-hover
-    &:nth-child(2n)
-      &:hover
-        &:after
-          background: rgba(253, 195, 0, 0.7)
+.sidebar
+  .block_servives
+    margin-bottom: 30px
+    .item
+      margin-bottom: 20px
+      height: 200px
+      &:last-child
+        margin-bottom: 0
       > div > div
+        .text
+          font-size: 24px
+          margin-bottom: 25px
         .readmore
+          font-size: 16px
+          background: none
+          padding: 8px 0
+          text-align: center
+          border: 1px solid #fff
           &:hover
-            background: $main-color
+            background: $main-color-hover
+      &:nth-child(2n)
+        &:hover
+          &:after
+            background: rgba(253, 195, 0, 0.7)
+        > div > div
+          .readmore
+            &:hover
+              background: $main-color
+
+

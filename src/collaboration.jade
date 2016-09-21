@@ -1,5 +1,5 @@
-- var title = "О НАС"
-- var img = "img/content/about.jpg"
+- var title = "Сотрудничество"
+- var img = "img/content/collaboration.jpg"
 - var bg_img = "../img/bg/bg_about.png"
 doctype html
 html(lang='ru')
@@ -9,7 +9,7 @@ html(lang='ru')
 		include ./partials/head.jade
 
 	body
-		.container.article
+		.container.article.collaboration
 
 			include ./partials/noscript.jade
 			include ./partials/navigation.jade
@@ -20,6 +20,9 @@ html(lang='ru')
 
 					include ./partials/sidebar_services.jade
 					include ./partials/last_news.jade
+			.inline-layout.block_footer
+				include ./partials/block_text.jade
+				include ./partials/block_contact.jade
 
 			include ./partials/footer.jade
 			include ./partials/modals.jade
