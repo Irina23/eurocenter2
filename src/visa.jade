@@ -1,6 +1,5 @@
-- var title = "Сотрудничество"
-- var img = "img/content/collaboration.jpg"
-- var bg_img = "../img/bg/bg_collaboration.jpg"
+- var title = "Виза в польшу"
+
 doctype html
 html(lang='ru')
 	head
@@ -9,22 +8,23 @@ html(lang='ru')
 		include ./partials/head.jade
 
 	body
-		.container.article.collaboration
+		.container.visa
 
 			include ./partials/noscript.jade
 			include ./partials/navigation.jade
 			main
+				h1= title
 				.inline-layout
-					include ./partials/article_text.jade
+					include ./partials/visa_text.jade
 
 					.sidebar
 
-						include ./partials/sidebar_services.jade
+						include ./partials/sidebar_services3.jade
 						include ./partials/last_news.jade
+
 				.inline-layout.block_footer
 					include ./partials/block_text.jade
 					include ./partials/block_contact.jade
-
 			include ./partials/footer.jade
 			include ./partials/modals.jade
 

@@ -13,13 +13,14 @@ html(lang='ru')
 
 			include ./partials/noscript.jade
 			include ./partials/navigation.jade
-			.inline-layout
-				include ./partials/article_text.jade
+			main
+				.inline-layout
+					include ./partials/article_text.jade
 
-				.sidebar
+					.sidebar
 
-					include ./partials/sidebar_services.jade
-					include ./partials/last_news.jade
+						include ./partials/sidebar_services.jade
+						include ./partials/last_news.jade
 
 			include ./partials/footer.jade
 			include ./partials/modals.jade

@@ -12,14 +12,15 @@ html(lang='ru')
 
 			include ./partials/noscript.jade
 			include ./partials/navigation.jade
-			h1= title
-			.inline-layout
-				include ./partials/vacancies_text.jade
+			main
+				h1= title
+				.inline-layout
+					include ./partials/vacancies_text.jade
 
-				.sidebar
+					.sidebar
 
-					include ./partials/sidebar_services2.jade
-					include ./partials/last_news.jade
+						include ./partials/sidebar_services2.jade
+						include ./partials/last_news.jade
 
 
 			include ./partials/footer.jade

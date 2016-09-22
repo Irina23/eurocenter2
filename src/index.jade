@@ -10,14 +10,14 @@ html(lang='ru')
 
 			include ./partials/noscript.jade
 			include ./partials/navigation.jade
-
-			include ./partials/block_services.jade
-			.inline-layout
-				include ./partials/slider_home.jade
-				include ./partials/last_news.jade
-			.inline-layout.block_footer
-				include ./partials/block_text.jade
-				include ./partials/block_contact.jade
+			main
+				include ./partials/block_services.jade
+				.inline-layout
+					include ./partials/slider_home.jade
+					include ./partials/last_news.jade
+				.inline-layout.block_footer
+					include ./partials/block_text.jade
+					include ./partials/block_contact.jade
 
 			include ./partials/footer.jade
 			include ./partials/modals.jade
