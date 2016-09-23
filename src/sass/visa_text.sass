@@ -1,22 +1,15 @@
 @import _mixins
 
-.article_text
+.visa_text
   width:  ( 100% / 3 ) * 2
-  margin-bottom: 180px
+  margin-bottom: 120px
+  padding-left: 65px
 
   .overflow-text
-    background: url("../img/bg/bg_about.png") no-repeat 50% 50%
-    background-size: cover
-    position: relative
-    padding: 40px 60px 50px
-    &:after
-      position: absolute
-      top: 0
-      left: 0
-      width: 100%
-      height: 100%
-      background: rgba(248, 246, 246, 0.9)
-      content: ""
+
+    .img-holder
+      float: right
+      width: 200px
     .text
       position: relative
       z-index: 2
@@ -32,9 +25,14 @@
       margin-bottom: 30px
       line-height: 1em
     h2
-      font-size: 28px
+      font-size: 24px
+      color: #000
+      font-weight: 300
+      font-family: 'RobotoCondensed-Light', sans-serif
     h3
       font-size: 24px
+      margin-bottom: 30px
+      text-transform: uppercase
     h4
       font-size: 20px
     h5
@@ -46,9 +44,11 @@
       font-size: 14px
       line-height: 2em
       font-family: 'RobotoCondensed-Light', sans-serif
+      margin-bottom: 30px
     ul, ol
+      margin-bottom: 30px
       li
-        font-size: 14px
+        font-size: 16px
         line-height: 2em
         font-family: 'RobotoCondensed-Light', sans-serif
         margin-left: 20px
@@ -61,6 +61,8 @@
           vertical-align: middle
           margin-right: 10px
           content: "-"
+
+
     table
       width: 100%
       margin-bottom: 70px
@@ -86,8 +88,3 @@
           padding: 15px 0
           border-bottom: 1px solid #f2f0f0
 
-
-.collaboration
-
-  .article_text
-    margin-bottom: 45px

@@ -2,7 +2,6 @@
 - vizovie yslygi page
 - rabota_za_rybegem page
 - Business services page
-- visa page
 - news page
 - article page
 - contact page
