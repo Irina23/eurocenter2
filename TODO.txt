@@ -3,5 +3,4 @@
 - rabota_za_rybegem page
 - Business services page
 - news page
-- article page
 - contact page
