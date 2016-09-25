@@ -1,0 +1,47 @@
+@import _mixins
+
+.business_services_text
+  width:  ( 100% / 3 ) * 2
+  margin-bottom: 50px
+  padding-left: 65px
+  .item
+    margin-bottom: 40px
+    padding-bottom: 40px
+    border-bottom: 1px solid #e5e5e5
+
+    .image-holder
+      width: 270px
+      margin-right: 30px
+    .overflow-text
+      width: calc(100% - 300px)
+      h3
+        line-height: 1em
+        margin-bottom: 20px
+        //overflow: hidden
+        //text-overflow: ellipsis
+        //white-space: nowrap
+        font-size: 24px
+        font-weight: normal
+      .description
+        font-size: 14px
+        line-height: 1.5em
+        font-family: 'RobotoCondensed-Light', sans-serif
+        margin-bottom: 20px
+      a
+        display: inline-block
+        vertical-align: middle
+        text-decoration: none
+        text-align: center
+        color: #000
+        font-size: 14px
+        &.download
+          color: $main-color
+          border: 2px solid $main-color
+          font-size: 16px
+          text-transform: uppercase
+          width: 120px
+          height: 35px
+          margin-right: 20px
+          line-height: 31px
+
+
