@@ -1,0 +1,34 @@
+- var title = "Работа за рубежом"
+
+doctype html
+html(lang='ru')
+	head
+		title= title
+
+		include ./partials/head.jade
+
+	body
+		.container.work_abroad_services
+
+			include ./partials/noscript.jade
+			include ./partials/navigation.jade
+			main
+				.block_work_services
+					h1= title
+					.inline-layout
+
+						include ./partials/work_abroad_services_text.jade
+
+						.sidebar
+
+							include ./partials/sidebar_services1.jade
+							include ./partials/last_news.jade
+				include ./partials/services_description.jade
+				.inline-layout.block_footer
+					include ./partials/block_text.jade
+					include ./partials/block_contact.jade
+
+			include ./partials/footer.jade
+			include ./partials/modals.jade
+
+	include ./partials/scripts.jade
