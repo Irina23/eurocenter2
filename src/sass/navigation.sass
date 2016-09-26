@@ -78,6 +78,91 @@ header
 					transition: all 0.35s
 
 
+	.top
+		padding: 20px 0
+		.logo
+			margin-right: 45px
+		.list_header
+			padding: 0 15px 0 60px
+			border-right:  1px solid #dfebf4
+			vertical-align: middle
+			height: 70px
+
+		.skype
+			border: 0
+
+		.city
+			padding-left: 50px
+			background: url("../img/icons/pointer-icon.png") no-repeat 15px center
+			background-size: 20px auto
+			.title
+				font-size: 14px
+				line-height: 1em
+				font-family: 'RobotoCondensed-Light', sans-serif
+				margin-top: 20px
+			.list_city
+				.select
+					color: $main-color-hover
+					text-transform: uppercase
+					font-size: 18px
+					line-height: 1em
+
+				ul
+					display: none
+
+		.phone
+			background: url("../img/icons/phone-icon.png") no-repeat 15px center
+			background-size: 30px auto
+			.list_phone
+				padding-right: 20px
+				margin-top: 20px
+				position: relative
+				&:after
+					content: ''
+					position: absolute
+					width: 0
+					height: 0
+					border-top: 6px solid $main-color-hover
+					border-left: 4px solid transparent
+					border-right: 4px solid transparent
+					right: 0
+					margin-top: -3px
+					top: 50%
+			.select
+				a
+					color: $main-color-hover
+					font-size: 24px
+					line-height: 1em
+					text-decoration: none
+			ul
+				display: none
+
+
+		.email, .skype
+
+
+			a
+				color: $main-color-hover
+				font-size: 18px
+				line-height: 1em
+				text-transform: uppercase
+				text-decoration: none
+				margin-top: 25px
+				display: block
+		.email
+			background: url("../img/icons/mail-icon.png") no-repeat 15px center
+			background-size: 30px auto
+		.skype
+			background: url("../img/icons/skype-icon.png") no-repeat 15px center
+			background-size: 30px auto
+
+		.lang
+			margin-left: 15px
+			ul
+				display: none
+
+
+
 main
 
 	.menu
