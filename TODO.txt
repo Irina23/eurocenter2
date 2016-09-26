@@ -1,7 +1,7 @@
 - header
-- vizovie yslygi page
 - rabota_za_rybegem page filter
 - news page
 - contact page
+- map site
 - mobile
 - tablet
