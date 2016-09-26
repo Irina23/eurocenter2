@@ -1,16 +1,40 @@
 // footer
+
+mixin menuLinkF (name, url, active, sub)
+    li(class= (active) ? "active" : "")
+
+        a(href= url)= name
+
+
 footer.inline-layout
 
     .copyright © 2013-2016 ТОВ "Євроцентр - Україна"
     nav.menu
         ul
-            li
-                a(href="#") Карта сайта
-            li
-                a(href="rabota_za_rybegem.html") Работа за рубежем
-            li
-                a(href="vizovie_yslygi.html") Визовые услуги
-            li
-                a(href="business_services.html") Услуги для бизнеса
-            li
-                a(href="#") Контакты
+            +menuLinkF(
+            'Карта сайта',
+            'map-site.html',
+            pagename === 'map' ? true : false
+            )
+            +menuLinkF(
+            'Работа за рубежем',
+            'rabota_za_rybegem.html',
+            pagename === 'work_abroad_services' ? true : false
+            )
+            +menuLinkF(
+            'Визовые услуги',
+            'vizovie_yslygi.html',
+            pagename === 'visa_services' ? true : false
+            )
+            +menuLinkF(
+            'Услуги для бизнеса',
+            'business_services.html',
+            pagename === 'business_services' ? true : false
+            )
+            +menuLinkF(
+            'Контакты',
+            '#',
+            pagename === 'contact' ? true : false
+            )
+
+

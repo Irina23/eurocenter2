@@ -1,52 +1,8 @@
 //- .preloader
 	//- .after
-mixin submenu (elements)
-	ul.submenu
-		- for (var element in elements)
-			li!= elements[element]
-mixin menuLink (name, url, active, sub)
-	li(class= (active) ? "active" : "")
 
-			a(href= url)= name
-			if sub
-				+submenu(sub)
 
 
 
 header
-	nav.menu
-		ul.inline-layout
-			+menuLink(
-			'О нас',
-			'about.html',
-			pagename === 'about' ? true : false
-			)
-			+menuLink(
-			'Услуги',
-			'#',
-			pagename === 'services' ? true : false,
-			[
-			'<a href="rabota_za_rybegem.html">Работа за рубежем</a>',
-			'<a href="business_services.html">Для бизнеса</a>',
-			'<a href="vizovie_yslygi.html">Визовые услуги</a>'
-			]
-			)
-			+menuLink(
-			'Пресс-центр',
-			'#',
-			pagename === 'blog' ? true : false,
-			[
-				'<a href="#">ВСЕ ПУБЛИКАЦИИ</a>',
-				'<a href="#">СВЕЖИЕ ПУБЛИКАЦИИ</a>'
-			]
-			)
-			+menuLink(
-			'Сотрудничество',
-			'collaboration.html',
-			pagename === 'collaboration' ? true : false
-			)
-			+menuLink(
-			'Контакты',
-			'#'
-			)
-
+	include ./menu.jade
