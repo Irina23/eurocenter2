@@ -23,8 +23,11 @@ $(document).ready( function () {
 			}
 		}
 	});
-});
-$(window).on('load', function () {
 
 
+
+	$(".select_toggle").on('click', function () {
+		$(this).parent().parent().toggleClass('open');
+	});
 });
+
