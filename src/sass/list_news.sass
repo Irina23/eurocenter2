@@ -1,0 +1,55 @@
+@import _mixins
+.list_news
+  width:  ( 100% / 3 ) * 2
+  margin-bottom: 50px
+.wrap_list_news
+
+  padding: 0 0 90px 65px
+  h3
+    color: $main-color
+    text-transform: uppercase
+    line-height: 1em
+    margin-bottom: 35px
+    font-size: 18px
+    font-weight: normal
+    font-family: "RobotoCondensed-Bold", sans-serif
+  .pagination
+    text-align: center
+    a
+      display: inline-block
+      width: 230px
+      height: 45px
+      line-height: 43px
+
+  .item
+    margin-bottom: 30px
+    &:last-child
+      margin-bottom: 50px
+
+    .overflow-text
+      width: calc(100% - 250px)
+      vertical-align: middle
+      h4
+        font-size: 24px
+        line-height: 1em
+        margin-bottom: 20px
+        font-weight: normal
+      .data
+        color: #979797
+        font-size: 14px
+        line-height: 1em
+        margin-bottom: 20px
+        font-weight: normal
+      .description
+        font-size: 14px
+        color: #000
+        margin-bottom: 20px
+      .readmore
+        color: $main-color-hover
+        text-transform: uppercase
+        text-decoration: none
+        transition: all 0.35s
+        font-size: 14px
+        &:hover
+          transition: all 0.35s
+          text-decoration: underline

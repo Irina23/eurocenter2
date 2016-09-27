@@ -1,0 +1,27 @@
+- var title = "Пресс-центр"
+- var pagename = "news"
+doctype html
+html(lang='ru')
+	head
+		title= title
+
+		include ./partials/head.jade
+
+	body
+		.container.news
+
+			include ./partials/noscript.jade
+			include ./partials/navigation.jade
+			main
+				h1= title
+				.inline-layout
+					include ./partials/list_news.jade
+
+					.sidebar
+						include ./partials/filter_news.jade
+						include ./partials/sidebar_services4.jade
+
+			include ./partials/footer.jade
+			include ./partials/modals.jade
+
+	include ./partials/scripts.jade
