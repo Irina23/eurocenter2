@@ -29,5 +29,10 @@ $(document).ready( function () {
 	$(".select_toggle").on('click', function () {
 		$(this).parent().parent().toggleClass('open');
 	});
+	$(".long_link").on('click', function () {
+		$(this).parent().toggleClass('open');
+	});
+
+
 });
 

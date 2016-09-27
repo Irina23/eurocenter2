@@ -1,0 +1,111 @@
+mixin filter (name, checkbox_name)
+    .attribute.checkbox
+        input(type="checkbox" name= checkbox_name value= name id= name)
+        label(for= name)= name
+
+
+form.filter
+    h3 Вакансии
+    .long_div
+        .attribute_holder
+            +filter(
+                'HR-специалисты/бизнес-тренеры',
+                'vacancies'
+            )
+            +filter(
+                'Банки/Финансы',
+                'vacancies'
+            )
+            +filter(
+                'Гостинично-ресторанное дело',
+                'vacancies'
+            )
+            +filter(
+                'Жилищное-коммунальное хозяйство',
+                'vacancies'
+            )
+            +filter(
+                'Красота/Спорт/Туризм',
+                'vacancies'
+            )
+
+            +filter(
+                'Маркетологи/Специалисты по PR',
+                'vacancies'
+            )
+            +filter(
+                'Недвижимость',
+                'vacancies'
+            )
+            +filter(
+                'Охрана/Безопасность',
+                'vacancies'
+            )
+            +filter(
+                'Полиграфия',
+                'vacancies'
+            )
+            +filter(
+                'Работа на дому',
+                'vacancies'
+            )
+            +filter(
+                'Полиграфия',
+                'vacancies'
+            )
+            +filter(
+                'Работа на дому',
+                'vacancies'
+            )
+        .long_link Все вакансии
+
+    h3 Страны
+    .attribute_holder.country
+        +filter(
+        'Австрия',
+        'country'
+        )
+
+        +filter(
+        'Бельгия',
+        'country'
+        )
+        +filter(
+        'Болгария',
+        'country'
+        )
+        +filter(
+        'Венгерия',
+        'country'
+        )
+        +filter(
+        'Германия',
+        'country'
+        )
+
+
+        +filter(
+        'Дания',
+        'country'
+        )
+        +filter(
+        'Испания',
+        'country'
+        )
+
+
+        +filter(
+        'Италия',
+        'country'
+        )
+
+        +filter(
+        'Латвия',
+        'country'
+        )
+
+        +filter(
+        'Литва',
+        'country'
+        )
+    button.black_button поиск
