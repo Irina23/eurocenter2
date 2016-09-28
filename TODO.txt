@@ -1,4 +1,4 @@
-- news page
+
 - contact page
 - mobile
 - tablet

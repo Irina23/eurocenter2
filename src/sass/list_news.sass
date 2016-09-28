@@ -25,25 +25,41 @@
     margin-bottom: 30px
     &:last-child
       margin-bottom: 50px
+    .img-holder
+      width: 100px
+      margin-right: 20px
+      a
+        width: 100%
+        img
+          width: 100%
 
     .overflow-text
-      width: calc(100% - 250px)
+      width: calc(100% - 120px)
       vertical-align: middle
       h4
-        font-size: 24px
-        line-height: 1em
-        margin-bottom: 20px
-        font-weight: normal
+        margin-bottom: 15px
+        a
+          font-size: 20px
+          line-height: 1em
+          font-weight: normal
+          color: #000
+          transition: all 0.35s
+          &:hover
+            transition: all 0.35s
+            color: $main-color-hover
+
       .data
-        color: #979797
-        font-size: 14px
+        color: #868585
+        font-size: 12px
         line-height: 1em
-        margin-bottom: 20px
-        font-weight: normal
+        margin-bottom: 15px
+        font-family: 'RobotoCondensed-Light', sans-serif
+
       .description
         font-size: 14px
         color: #000
-        margin-bottom: 20px
+        margin-bottom: 15px
+
       .readmore
         color: $main-color-hover
         text-transform: uppercase
