@@ -6,23 +6,19 @@
 		height: 260px
 		width: 30%
 		position: relative
-		&.active
-			&:hover
-				&:after
-					transition: all 0.35s
-					background: rgba(14, 110, 184, 0.8)
-				> div > div .readmore:hover
-					background: url("../img/icons/arrow.png") no-repeat  115px center $main-color-hover
-					background-size: 6px auto
+
 		&:first-child
 			width: 40%
-
-		&:hover
 			&:after
-				transition: all 0.35s
-				background: rgba(253, 195, 0, 0.8)
+
+				background: rgba(14, 110, 184, 0.8)
+			> div > div .readmore:hover
+				background: url("../img/icons/arrow.png") no-repeat  115px center $main-color-hover
+				background-size: 6px auto
+
+
 		&:after
-			background: rgba(255, 255, 255, 0.05)
+			background: rgba(253, 195, 0, 0.8)
 			width: 100%
 			height: 100%
 			content: ""

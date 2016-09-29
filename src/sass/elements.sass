@@ -190,15 +190,71 @@ h1
 
 
 
-  .visa_services_text .tabs .tab-content
+  .visa_services_text .visa-content
     padding: 30px 0 50px 30px
 
 
-  .visa_services_text .tabs .tabs-menu
+  .visa_services_text .list-menu
     padding: 30px
 
 
 
 @media screen and (max-width: 930px)
+  .container
+    width: 100%
+    padding: 0 20px
 
 
+  .last_news, .block_contact, .block_text .overflow-text
+    h3
+      font-size: 20px
+
+  footer
+    .copyright
+      width: 100%
+      text-align: center
+
+    .menu
+      display: none
+
+  .block_footer
+    .block_text
+      width: 100%
+      .overflow-text:after
+        display: none
+
+    .block_contact
+      width: 100%
+
+
+@media screen and (max-width: 830px)
+  .last_news, .slider_home
+    height: auto
+    width: 100%
+
+
+  .block_servives
+    .item
+      width: 100%
+      > div > div
+        .text
+          font-size: 18px
+
+
+  .slider_home
+    .item > div > div
+      .text
+        padding: 0 30px
+        font-size: 20px
+
+
+  .article_text, .sidebar
+    width: 100%
+    margin-bottom: 50px
+
+  .contact_map
+    margin-bottom: 50px
+    .item
+      width: 100%
+  .article_text .overflow-text h1
+    font-size: 24px

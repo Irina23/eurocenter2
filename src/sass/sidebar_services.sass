@@ -6,6 +6,8 @@
     .item
       margin-bottom: 20px
       height: 200px
+      &:after
+        background: rgba(14, 110, 184, 0.75)
       &:last-child
         margin-bottom: 0
       > div > div
@@ -20,8 +22,7 @@
           &:hover
             background: $main-color-hover
       &:nth-child(2n)
-        &:hover
-          &:after
+        &:after
             background: rgba(253, 195, 0, 0.7)
         > div > div
           .readmore
@@ -33,8 +34,7 @@
   .sidebar
     .block_servives
       .item:nth-child(2n)
-        &:hover
-          &:after
+        &:after
             background: rgba(14, 110, 184, 0.75)
 
         .readmore
