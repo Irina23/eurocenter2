@@ -140,6 +140,10 @@
       &:first-child
         width: 40%
         &:hover, &.active
+          > div > div .readmore
+            &:hover
+              background: url("../img/icons/arrow2.png") no-repeat center $main-color-hover
+              background-size: 25px auto
           &:after
             transition: all 0.35s
             background: rgba(14, 110, 184, 0.75)
@@ -179,8 +183,10 @@
             height: 36px
             background: url("../img/icons/arrow2.png") no-repeat  center
             background-size: 25px auto
-
             display: block
             margin: auto
+            &:hover
+              background: url("../img/icons/arrow2.png") no-repeat center $main-color
+              background-size: 25px auto
 
 
