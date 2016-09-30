@@ -5,11 +5,14 @@ mixin abroadServices (name, country, description, url, price)
        .overflow-text
             h4= name
             .country= country
+            .price= price
             .description= description
             a.readmore(href= url ) Подробнее о вакансии >
        .price= price
 .work_services_text
     include ./block_country_services.jade
+    .mobile_filter
+        include ./filter.jade
     .work_abroad_services_text
         h3 Горячие вакансии
         +abroadServices(

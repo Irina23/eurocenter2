@@ -8,6 +8,19 @@ header
 	.menu
 		padding: 0 65px
 		background: $main-color
+		.menu-icon
+			display: none
+
+			cursor: pointer
+			.icon-bar
+				background-color: #fff
+				display: block
+				width: 24px
+				height: 2px
+				margin-top: 5px
+				&:first-child
+					margin-top: 0
+
 		>ul
 			//display: table
 			//width: 100%
@@ -53,6 +66,8 @@ header
 				padding: 14px 15px
 				background: $main-color
 				position: relative
+				&:last-child
+					display: none
 				&:hover
 					> a
 						transition: all 0.35s
@@ -328,6 +343,8 @@ main
 
 	.menu
 		padding: 0 65px 100px
+		.menu-icon
+			display: none
 		>ul
 			li
 				display: block

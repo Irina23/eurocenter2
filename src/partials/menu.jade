@@ -15,6 +15,11 @@ mixin menuLink (name, url, active, sub)
 
 
 nav.menu
+	.menu-icon
+		.icon-bar
+		.icon-bar
+		.icon-bar
+
 	ul.inline-layout
 		+menuLink(
 		'О нас',
@@ -49,5 +54,10 @@ nav.menu
 		'Контакты',
 		'contact.html',
 		pagename === 'contact' ? true : false
+		)
+		+menuLink(
+		'Карта сайта',
+		'map-site.html',
+		pagename === 'map' ? true : false
 		)
 

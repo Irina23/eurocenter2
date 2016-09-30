@@ -11,7 +11,8 @@ mixin listNews (name, data, description, url, img)
             .data= data
             .description= description
             a.readmore(href= url ) Подробнее >
-
+.mobile_filter
+    include ./filter_news.jade
 .list_news
 
     .wrap_list_news

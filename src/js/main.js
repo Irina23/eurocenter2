@@ -29,7 +29,7 @@ $(document).ready( function () {
 	$(".select_toggle").on('click', function () {
 		$(this).parent().parent().toggleClass('open');
 	});
-	$(".long_link").on('click', function () {
+	$(".long_link, header .menu-icon").on('click', function () {
 		$(this).parent().toggleClass('open');
 	});
 
