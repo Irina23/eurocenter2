@@ -29,6 +29,9 @@ $(document).ready( function () {
 	$(".select_toggle").on('click', function () {
 		$(this).parent().parent().toggleClass('open');
 	});
+	$(".lang").on('click', function () {
+		$(this).toggleClass('open');
+	});
 	$(".long_link, header .menu-icon").on('click', function () {
 		$(this).parent().toggleClass('open');
 	});
