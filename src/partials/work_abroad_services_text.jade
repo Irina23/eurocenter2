@@ -3,7 +3,8 @@
 mixin abroadServices (name, country, description, url, price)
     .item.inline-layout
        .overflow-text
-            h4= name
+            h4
+                a(href= url)= name
             .country= country
             .price= price
             .description= description
