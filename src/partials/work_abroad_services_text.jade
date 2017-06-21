@@ -1,55 +1,44 @@
 
 
-mixin abroadServices (name, country, description, url, price)
-    .item.inline-layout
-       .overflow-text
+mixin abroadServices ()
+    .item
+        div
+
+            a(href="#")
+                .image-holder
+                    img.fake-img(src="img/content/news-article-img.jpg" alt="name")
+                    .img(style="background: url(img/content/news-article-img.jpg) no-repeat;background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;")
             h4
-                a(href= url)= name
-            .country= country
-            .price= price
-            .description= description
-            a.readmore(href= url ) Подробнее о вакансии >
-       .price= price
+                a(href="#") Помощник пекаря
+            .overflow-text
+                .name
+                    strong Работа помощником пекаря в Польше
+                ul
+                    li вакансия для женщин
+                    li ЗП — 8,5 злотых/час
+                    li 8-часовая смена
+                    li трудовой договор на 6 мес.
+                    li предоставляемое жилье
+                    li г. Щецин
+                    li требуется мед. книга
+
+                price 10000-15000 грн/мес
+
+                a.readmore(href="vacancies.html" ) Узнать больше
+
 .work_services_text
     include ./block_country_services.jade
     .mobile_filter
         include ./filter.jade
     .work_abroad_services_text
         h3 Горячие вакансии
-        +abroadServices(
-        'Рабочие на склад интерет магазина Eobuwie',
-        'EOBUWIE * Польша, Зелёна-Гура',
-        'На постоянную работу, на склад интернет-магазина EOBUWIE, требуются Мужчины. Подробную информацию о компании можно найти на официальном сайте — www.eobuwie.com.pl.',
-        'vacancies.html',
-        'зп 18000 грн'
-        )
-        +abroadServices(
-        'Рабочие на склад интерет магазина Eobuwie',
-        'EOBUWIE * Польша, Зелёна-Гура',
-        'На постоянную работу, на склад интернет-магазина EOBUWIE, требуются Мужчины. Подробную информацию о компании можно найти на официальном сайте — www.eobuwie.com.pl.',
-        'vacancies.html',
-        'зп 18000 грн'
-        )
-        +abroadServices(
-        'Рабочие на склад интерет магазина Eobuwie',
-        'EOBUWIE * Польша, Зелёна-Гура',
-        'На постоянную работу, на склад интернет-магазина EOBUWIE, требуются Мужчины. Подробную информацию о компании можно найти на официальном сайте — www.eobuwie.com.pl.',
-        'vacancies.html',
-        'зп 18000 грн'
-        )
-        +abroadServices(
-        'Рабочие на склад интерет магазина Eobuwie',
-        'EOBUWIE * Польша, Зелёна-Гура',
-        'На постоянную работу, на склад интернет-магазина EOBUWIE, требуются Мужчины. Подробную информацию о компании можно найти на официальном сайте — www.eobuwie.com.pl.',
-        'vacancies.html',
-        'зп 18000 грн'
-        )
-        +abroadServices(
-        'Рабочие на склад интерет магазина Eobuwie',
-        'EOBUWIE * Польша, Зелёна-Гура',
-        'На постоянную работу, на склад интернет-магазина EOBUWIE, требуются Мужчины. Подробную информацию о компании можно найти на официальном сайте — www.eobuwie.com.pl.',
-        'vacancies.html',
-        'зп 18000 грн'
-        )
+        .list_vacancies.inline-layout
+            +abroadServices()
+            +abroadServices()
+            +abroadServices()
+            +abroadServices()
+            +abroadServices()
+            +abroadServices()
+
         .pagination
             a.black_button(href="#") Показать еще 10 вакансий
