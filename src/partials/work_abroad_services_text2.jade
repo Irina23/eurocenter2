@@ -1,0 +1,39 @@
+
+
+mixin abroadServices ()
+    .item
+        div
+
+            a(href="#")
+                .image-holder
+                    img.fake-img(src="img/content/news-article-img.jpg" alt="name")
+                    .img(style="background: url(img/content/news-article-img.jpg) no-repeat;background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;")
+            h4
+                a(href="#") Помощник пекаря
+            .overflow-text
+                .name
+                    strong Работа помощником пекаря в Польше
+                ul
+                    li вакансия для женщин
+                    li ЗП — 8,5 злотых/час
+                    li 8-часовая смена
+                    li трудовой договор на 6 мес.
+                    li предоставляемое жилье
+                    li г. Щецин
+                    li требуется мед. книга
+
+                price 10000-15000 грн/мес
+
+                a.readmore(href="vacancies.html" ) Узнать больше
+
+.work_services_text
+
+    .work_abroad_services_text
+        h3 Горячие вакансии
+        .list_vacancies.inline-layout
+            +abroadServices()
+            +abroadServices()
+            +abroadServices()
+            +abroadServices()
+            +abroadServices()
+            +abroadServices()
