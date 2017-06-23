@@ -21,19 +21,20 @@ mixin abroadServices ()
                     li предоставляемое жилье
                     li г. Щецин
                     li требуется мед. книга
+                .block_button
+                    hr
+                    price 10000-15000 грн/мес
 
-                price 10000-15000 грн/мес
+                    a.readmore(href="vacancies.html" ) Узнать больше
 
-                a.readmore(href="vacancies.html" ) Узнать больше
 
-.work_services_text
+.work_abroad_services_text
+    h3 Горячие вакансии
+    .list_vacancies.inline-layout.col-4
+        +abroadServices()
+        +abroadServices()
+        +abroadServices()
+        +abroadServices()
 
-    .work_abroad_services_text
-        h3 Горячие вакансии
-        .list_vacancies.inline-layout
-            +abroadServices()
-            +abroadServices()
-            +abroadServices()
-            +abroadServices()
-            +abroadServices()
-            +abroadServices()
+    .pagination
+        a.black_button(href="#") Показать еще 4 вакансий
