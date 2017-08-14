@@ -1,0 +1,523 @@
+@import _mixins
+.black_button
+  border: 1px solid #000
+  text-align: center
+  text-transform: uppercase
+  font-size: 16px
+  transition: all 0.35s
+  display: inline-block
+  color: $base-font-color
+  text-decoration: none
+  cursor: pointer
+  &:hover
+    transition: all 0.35s
+    background: #000
+    color: #fff
+
+
+.white_button
+  font-size: 16px
+  text-decoration: none
+  text-align: center
+  text-transform: uppercase
+  color: #fff
+  display: inline-block
+
+.get_job
+  background-color: #0e64a6
+  padding: 12px 24px
+  margin-top: 25px
+
+h1
+
+  text-transform: uppercase
+  font-size: 30px
+  line-height: 1em
+  margin-bottom: 40px
+  font-weight: normal
+  padding-left: 65px
+
+.news-article
+  h1
+    margin-bottom: 10px
+    text-transform: none
+  .data
+    margin-bottom: 30px
+    color: #868585
+    font-size: 12px
+    line-height: 1em
+    padding-left: 65px
+
+.mobile_filter
+  .filter
+    display: none
+
+@media screen and (max-width: 1360px)
+  .container
+    width: 1160px
+  .sidebar h3
+    font-size: 22px
+
+  header .top
+    .logo
+      margin-right: 20px
+    .phone
+      .list_phone
+        margin-top: 23px
+      .select a, ul a
+        font-size: 18px
+    .email, .skype
+      a
+        font-size: 16px
+
+  .block_contact .overflow-text p a.phone
+    font-size: 18px
+
+
+@media screen and (max-width: $screen-lg)
+  .container
+    width: 1024px
+
+  header .top
+    .logo
+      width: 180px
+    .list_header
+      background-size: 20px auto
+      padding-left: 45px
+      height: 50px
+    .email , .skype
+      a
+        font-size: 14px
+        margin-top: 20px
+    .phone .list_phone
+      margin-top: 15px
+    .city .title
+      margin-top: 10px
+    .lang
+      margin-top: 10px
+
+  .block_servives
+    .item
+      height: 340px
+
+  footer
+    .copyright
+      width: 30%
+      vertical-align: top
+      a
+        display: block
+        margin-top: 15px
+        margin-left: 0
+    .menu
+      width: 70%
+      vertical-align: top
+      li
+        margin: 0 10px
+
+  .sidebar
+    .block_servives
+      .item > div > div
+        .text
+          font-size: 20px
+
+
+  .visa_services_text .tabs .nav-tabs li
+    padding: 0 30px 15px
+
+
+@media screen and (max-width: 1080px)
+  .container
+    width: 900px
+
+  .block_servives
+    .item
+      height: 300px
+      > div > div
+        .text
+          font-size: 24px
+
+  .slider_home, .slider_home .item, .last_news
+    height: 400px
+
+  header .menu
+    padding: 0 30px
+
+  .block_footer
+    .block_text, .block_contact
+      padding: 30px
+
+  footer, .vacancies footer
+    padding: 30px 15px
+    .menu li
+      margin: 0 7px
+      a
+        text-transform: none
+
+  header
+    .top
+      position: relative
+      .email , .skype
+        a
+            margin-top: 0
+            line-height: 15px
+
+
+
+      .phone .list_phone
+        margin-top: 0
+      >div
+        display: block
+        margin-bottom: 20px
+
+      .list_header
+        padding: 0 10px 0 30px
+        background-size: 15px auto
+        background-position: 10px center
+        height: auto
+        border: 0
+
+      .skype
+        margin-bottom: 0
+      .city
+        background-size: 12px auto
+        background-position: 10px center
+
+      .logo
+        width: 150px
+        margin-right: 10px
+      .lang
+        margin: 0
+        position: absolute
+        top: 20px
+        right: 0
+    .menu
+      padding: 20px
+      &.open
+        .menu-icon
+          margin-bottom: 30px
+        >ul
+          display: block
+
+      > ul
+        display: none
+        li
+          display: block
+          padding: 0
+          &:last-child
+            display: block
+          a
+            padding: 10px 0
+            display: block
+
+        .submenu
+          display: block
+          position: inherit
+          top: inherit
+          left: inherit
+          background: none
+          padding: 0
+          padding-left: 20px
+          a
+            padding: 10px 0
+            color: #fff
+
+
+
+
+
+  .sidebar
+    padding: 0 30px
+
+  .article_text .overflow-text
+    padding: 30px
+
+
+
+  h1, .vacancies_text, .business_services_text, .visa_text, .wrap_list_news, .news_article_text,
+  .news-article .data
+    padding-left: 30px
+
+
+  .contact_map
+    padding: 0 15px
+
+  .work_abroad_services_text
+    padding: 30px 0 90px 30px
+  .services_description
+    padding: 30px 30px 70px
+
+
+
+  .vacancies_form form
+    width: 100%
+
+  .business_services_text
+    .item
+      .image-holder
+        width: 30%
+      .overflow-text
+        width: calc(70% - 30px)
+
+
+
+  .visa_services_text .visa-content
+    padding: 30px 0 50px 30px
+
+
+  .visa_services_text .list-menu
+    padding: 30px
+
+
+  header .menu .menu-icon
+    display: block
+
+
+  .visa_services_text
+    .list-menu
+      .nav
+        li
+          padding: 0 20px 20px
+
+
+
+
+
+@media screen and (max-width: 930px)
+  .container
+    width: 100%
+    padding: 0 20px
+
+
+  .last_news, .block_contact, .block_text .overflow-text
+    h3
+      font-size: 20px
+
+  footer
+    .copyright
+      width: 100%
+      text-align: center
+
+    .menu
+      display: none
+
+  .block_footer
+    .block_text
+      width: 100%
+      .overflow-text:after
+        display: none
+
+    .block_contact
+      width: 100%
+
+  .error404.container
+    padding: 50px 20px
+    .content
+      padding: 50px 20px
+      .error404_text
+        font-size: 100px
+
+@media screen and (max-width: 830px)
+  .last_news, .slider_home, .main_home
+    height: auto
+    width: 100%
+
+
+  .block_servives
+    .item
+      width: 100%
+      > div > div
+        .text
+          font-size: 18px
+
+
+  .slider_home
+    .item > div > div
+      .text
+        padding: 0 30px
+        font-size: 20px
+
+
+  .article_text, .sidebar, .vacancies .sidebar
+    width: 100%
+    margin-bottom: 50px
+
+  .contact_map
+    margin-bottom: 50px
+    .item
+      width: 100%
+  .article_text .overflow-text h1
+    font-size: 24px
+
+
+  .sidebar
+    padding: 0
+
+  .block_footer
+    .block_text, .block_contact
+      padding: 20px
+
+
+  .contact_map
+    .item
+      padding: 0
+      .map
+        height: 200px
+  h1
+    font-size: 24px
+
+  main .menu
+    padding: 0 30px 30px
+
+
+  .news_article_text, .visa_text, .vacancies_text, .business_services_text, .visa_services_text,
+  .list_news, .work_services_text
+    width: 100%
+    padding-left: 0
+    margin-bottom: 50px
+
+  .news-article .sidebar, .visa .sidebar
+    margin-bottom: 50px
+
+  .business_services_text
+    margin-bottom: 0
+
+  .visa_services_text .visa-content
+    padding: 30px 0 0
+    h2
+      font-size: 20px
+
+  .article_text, .news_article_text , .visa_text , .vacancies_text , .services_description
+    .overflow-text
+      h2
+        font-size: 22px
+      h3
+        font-size: 20px
+      h4
+        font-size: 18px
+      h5
+        font-size: 16px
+      h6
+        font-size: 14px
+
+      table tr
+        th, td
+          font-size: 14px
+          padding: 5px
+
+
+  .contact_map
+    padding: 0
+
+  .visa, .contact, .map-site, .news-article, .vacancies, .business_services, .visa_services, .news, .work_abroad_services
+    h1, .data
+      padding-left: 0
+  .wrap_list_news
+    padding-left: 0
+    padding-bottom: 0
+  main
+    min-height: inherit
+    .menu
+      padding: 0 0 30px
+
+
+  .business_services_text .item
+    .image-holder
+      width: 100%
+      margin: 0 auto 20px
+      max-height: 250px
+    .overflow-text
+      width: 100%
+      a
+        margin-bottom: 15px
+
+  .mobile_filter
+    width: 100%
+    .filter
+      display: block
+  .filter
+    display: none
+
+  .work_abroad_services_text
+
+    padding: 0
+    h3
+      font-size: 24px
+    .item
+      .overflow-text
+        width: 100%
+        h4
+          font-size: 20px
+        .price
+          display: block
+          text-align: left
+          margin: 0 0 20px
+          width: 100%
+          font-size: 20px
+      .price
+        display: none
+
+  .work_abroad_services .block_work_services
+    background: none
+
+  .main-tabs
+    margin-bottom: 30px
+
+  .services_description
+    padding: 0 0 30px
+
+
+
+
+
+
+@media screen and (max-width: 550px)
+  .visa_services_text
+    .main-tabs .item
+      width: 100% !important
+    .list-menu .nav li
+      padding: 0 0 15px
+      width: 50%
+      &:nth-child(2n)
+         padding-left: 15px
+         border: 0
+
+  .main-tabs .item
+    width: 100% !important
+
+
+  .coming_soon
+    main
+      padding: 20px
+      margin: 30px 0
+    .logo
+      width: 230px
+      margin-bottom: 40px
+    h3
+      font-size: 24px
+      margin-bottom: 40px
+    div
+      width: 100%
+      p
+        font-size: 18px
+      a
+        font-size: 16px
+
+
+@media screen and (max-width: $screen-xs)
+  .vacancies_form .row-group .element-form
+
+    width: 100%
+    margin-right: 0
+
+  .vacancies_text .overflow-text .img-holder
+    float: none
+    margin-bottom: 30px
+
+
+  .wrap_list_news .item .img-holder
+    width: 100%
+    margin-right: 0
+    margin-bottom: 20px
+
+  .wrap_list_news .item .overflow-text
+    width: 100%

@@ -1,0 +1,175 @@
+@import _mixins
+.work_services_text
+  width:  ( 100% / 3 ) * 2
+  margin-bottom: 50px
+.work_abroad_services_text
+  padding: 60px 0 90px 0
+  @media screen and (max-width: 959px)
+    padding: 30px 0
+  h3
+    color: $main-color
+    text-transform: uppercase
+    line-height: 1em
+    margin-bottom: 40px
+    font-size: 30px
+    font-weight: normal
+    text-align: center
+    @media screen and (max-width: 959px)
+      margin-bottom: 20px
+  .pagination
+    text-align: center
+    a
+      display: inline-block
+      width: 230px
+      height: 45px
+      line-height: 43px
+
+  .list_vacancies
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    &.col-4
+      .item
+        width: calc(100%/4)
+        min-width: calc(100%/4)
+        max-width: calc(100%/4)
+        @media screen and (max-width: 1199px)
+          width: calc(100%/3)
+          min-width: calc(100%/3)
+          max-width: calc(100%/3)
+        @media screen and (max-width: 959px)
+          width: 50%
+          min-width: 50%
+          max-width: 50%
+        @media screen and (max-width: 600px)
+          width: 100%
+          min-width: 100%
+          max-width: 100%
+          
+          
+  .item
+    margin-bottom: 30px
+    flex: 1
+    flex-shrink: 1
+    flex-basis: auto
+    width: calc(100%/3)
+    min-width: calc(100%/3)
+    max-width: calc(100%/3)
+    padding: 15px
+    
+    @media screen and (max-width: 1199px)
+      width: 50%
+      min-width: 50%
+      max-width: 50%
+    @media screen and (max-width: 600px)
+      width: 100%
+      min-width: 100%
+      max-width: 100%
+    >div
+      //border: 2px solid #0e6eb8
+      background: #e9e9e9
+      height: 100%
+      padding-bottom: 111px
+      position: relative
+    .block_button
+      position: absolute
+      bottom: 20px
+      left: 0
+      width: 100%
+      height: 96px
+      padding: 0 15px
+      //border-top: 2px solid #cccaca
+      hr
+        width: 100%
+        height: 2px
+        background: #cccaca
+        margin-top: 0
+        border: 0
+        margin-bottom: 15px
+      .readmore
+        background: #fdc300
+        text-transform: uppercase
+        text-decoration: none
+        transition: all 0.35s
+        display: block
+        color: #141414
+        font-size: 16px
+        text-align: center
+        border-radius: 5px
+        width: 165px
+        height: 40px
+        line-height: 40px
+        margin: auto
+        font-family: "RobotoCondensed-Bold", sans-serif
+        position: absolute
+        bottom: 0
+        left: 50%
+        margin-left: -80px
+  
+      price
+        vertical-align: middle
+        color: rgba(14, 110, 184, 0.7)
+        text-align: center
+        font-size: 24px
+        line-height: 1em
+        display: block
+        margin-bottom: 15px
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+  
+    a
+      display: block
+    .image-holder
+      height: 170px
+    
+    h4
+      margin-bottom: 0
+      font-weight: bold
+      color: #fff
+      text-align: center
+      background: #0e6eb8
+      display: block
+      
+    
+      a
+        font-size: 18px
+        line-height: 1em
+        text-decoration: none
+        color: #fff
+        text-transform: uppercase
+        padding: 15px 0
+        font-family: "RobotoCondensed-Bold", sans-serif
+        
+          
+    .overflow-text
+     
+      padding: 20px
+      padding-bottom: 0
+      position: relative
+      
+      
+        
+        
+      .name
+        margin-bottom: 10px
+        line-height: 1.2em
+      ul
+        padding-bottom: 15px
+        
+        font-size: 14px
+        li
+          padding-left: 15px
+          position: relative
+          &:before
+            content: ""
+            position: absolute
+            left: 0
+            top: 9px
+            width: 6px
+            height: 6px
+            border-radius: 50%
+            background-color:  #0e6eb8
+      
+        
+        

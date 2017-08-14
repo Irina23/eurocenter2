@@ -1,0 +1,29 @@
+- var title = "О НАС"
+- var img = "img/content/about.jpg"
+- var bg_img = "../img/bg/bg_about.png"
+- var pagename = "about"
+doctype html
+html(lang='ru')
+	head
+		title= title
+
+		include ./partials/head.jade
+
+	body
+		.container.article
+
+			include ./partials/noscript.jade
+			include ./partials/navigation.jade
+			main
+				.inline-layout
+					include ./partials/article_text.jade
+
+					.sidebar
+
+						include ./partials/sidebar_services.jade
+						include ./partials/last_news.jade
+
+			include ./partials/footer.jade
+			include ./partials/modals.jade
+
+	include ./partials/scripts.jade

@@ -1,0 +1,35 @@
+mixin filter (name, checkbox_name)
+    .attribute.checkbox
+        input(type="checkbox" name= checkbox_name value= name id= name)
+        label(for= name)= name
+
+
+form.filter.filter_news
+    h3 Рубрики
+
+    .attribute_holder
+        +filter(
+            'Новости компании',
+            'news'
+        )
+        +filter(
+            'Новости рынка',
+            'news'
+        )
+        +filter(
+            'Комментарии экспертов',
+            'news'
+        )
+        +filter(
+            'Аналитика рынка',
+            'news'
+        )
+        +filter(
+            'Мы в СМИ',
+            'news'
+        )
+    button.black_button поиск
+
+
+
+    //button.black_button поиск

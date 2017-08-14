@@ -1,0 +1,46 @@
+@import _mixins
+
+.sidebar
+  .block_servives
+    margin-bottom: 30px
+    .item
+      margin-bottom: 20px
+      height: 200px
+      &:after
+        background: rgba(14, 110, 184, 0.75)
+      &:last-child
+        margin-bottom: 0
+      > div > div
+        .text
+          font-size: 24px
+          margin-bottom: 25px
+        .readmore
+          padding: 8px 0
+          background: none
+          text-align: center
+          border: 1px solid #fff
+          &:hover
+            background: $main-color-hover
+      &:nth-child(2n)
+        &:after
+            background: rgba(253, 195, 0, 0.7)
+        > div > div
+          .readmore
+            &:hover
+              background: $main-color
+
+
+.visa, .visa_services
+  .sidebar
+    .block_servives
+      .item:nth-child(2n)
+        &:after
+            background: rgba(14, 110, 184, 0.75)
+
+        .readmore
+          &:hover
+            background: $main-color-hover
+
+.news-article
+  .sidebar
+    margin-bottom: 220px

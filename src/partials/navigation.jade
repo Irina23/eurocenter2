@@ -1,0 +1,53 @@
+//- .preloader
+	//- .after
+
+
+
+
+header
+	.top.inline-layout
+		.logo
+			a(href="/")
+				img(src="img/icons/logo_ukr2.svg" alt="ЄВРОЦЕНТР")
+		.city.list_header
+
+			.title Выберите город
+			.list_city
+				.select Черкассы
+					span.select_toggle
+				ul
+					li.active(data-value='Черкассы')
+						a(href="#") Черкассы
+					li(data-value='Киев')
+						a(href="#") Киев
+					li(data-value='Умань')
+						a(href="#") Умань
+
+
+		.phone.list_header
+			.list_phone
+				.select
+					a(href="tel:+38 (0472) 38-32-98") +38 (0472) 38-32-98
+					span.select_toggle
+				ul
+					li(data-value='+38 (0472) 38-32-98')
+						a(href="tel:+38 (0472) 38-32-98") +38 (0472) 38-32-98
+					li(data-value='+38 (0472) 38-32-99')
+						a(href="tel:+38 (0472) 38-32-99") +38 (0472) 38-32-99
+
+		.email.list_header
+			a(href="mailto:Cherkasy@euc.com.ua" ) Cherkasy@euc.com.ua
+		.skype.list_header
+			a(href="skype:cherkasy.euc" ) cherkasy.euc
+
+		.lang
+			.select Ru
+				span.select_toggle1
+			ul
+				li.active(data-value='Ru')
+					a(href="#") Ru
+				li(data-value='Ua')
+					a(href="#") Ua
+
+
+	include ./menu.jade

@@ -1,0 +1,26 @@
+{
+  "name": "bower",
+  "description": "bower",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+  ],
+  "authors": [
+    "Irina"
+  ],
+  "license": "no license",
+  "homepage": "https://github.com/Irina23/eurocenter2",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "jquery.browser": "latest",
+    "owl.carousel": "^2.1.6"
+  }
+}

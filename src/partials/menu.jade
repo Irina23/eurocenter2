@@ -1,0 +1,60 @@
+//- .preloader
+	//- .after
+mixin submenu (elements)
+	ul.submenu
+		- for (var element in elements)
+			li!= elements[element]
+mixin menuLink (name, url, active, sub)
+	li(class= (active) ? "active" : "")
+
+			a(href= url)= name
+			if sub
+				+submenu(sub)
+
+
+
+
+nav.menu
+	.menu-icon
+		.icon-bar
+		.icon-bar
+		.icon-bar
+
+	ul.inline-layout
+		+menuLink(
+		'О нас',
+		'about.html',
+		pagename === 'about' ? true : false
+		)
+		+menuLink(
+		'Услуги',
+		'#',
+		pagename === 'services' ? true : false,
+		[
+		'<a href="rabota_za_rybegem.html">Работа за рубежем</a>',
+		'<a href="business_services.html">Для бизнеса</a>',
+		'<a href="vizovie_yslygi.html">Визовые услуги</a>'
+		]
+		)
+		+menuLink(
+		'Пресс-центр',
+		'news.html',
+		pagename === 'news' ? true : false
+
+		)
+		+menuLink(
+		'Сотрудничество',
+		'collaboration.html',
+		pagename === 'collaboration' ? true : false
+		)
+		+menuLink(
+		'Контакты',
+		'contact.html',
+		pagename === 'contact' ? true : false
+		)
+		+menuLink(
+		'Карта сайта',
+		'map-site.html',
+		pagename === 'map' ? true : false
+		)
+

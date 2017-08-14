@@ -1,0 +1,50 @@
+@import _mixins
+.main_home
+  width: (100 / 3)*2 + %
+  .work_services_text
+    width: 100%
+.slider_home
+  width: 100%
+  height: 460px
+  overflow: hidden
+  .item
+    height: 460px
+    position: relative
+
+    >div
+      display: table
+      position: relative
+      z-index: 2
+      width: 100%
+      height: 100%
+      >div
+        display: table-cell
+        vertical-align: middle
+        text-align: center
+
+        .text
+          color: #fff
+          font-size: 30px
+          line-height: 1.3em
+          text-transform: uppercase
+          text-shadow: 0px 5px 6.65px rgba(0, 0, 0, 0.32)
+          //font-family: 'RobotoCondensed-Light', sans-serif
+          padding: 0 50px
+
+  .owl-dots
+    position: absolute
+    bottom: 60px
+    right: 30px
+    width: 20px
+    .owl-dot
+      width: 20px
+      height: 4px
+      border: 1px solid #fff
+      box-sizing: border-box
+      display: block
+      margin-bottom: 9px
+      &:last-child
+        margin-bottom: 0
+
+      &.active
+        background: #fff

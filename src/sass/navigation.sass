@@ -1,0 +1,366 @@
+@import _mixins
+
+//----------------------------------
+// Default navbar
+//----------------------------------
+header
+	//margin-bottom: 40px
+	.menu
+		padding: 0 65px
+		background: $main-color
+		.menu-icon
+			display: none
+
+			cursor: pointer
+			.icon-bar
+				background-color: #fff
+				display: block
+				width: 24px
+				height: 2px
+				margin-top: 5px
+				&:first-child
+					margin-top: 0
+
+		>ul
+			//display: table
+			//width: 100%
+			display: flex
+    		flex-direction: row
+			justify-content: space-between
+			.submenu
+				box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.08)
+				display: none
+				position: absolute
+				top: 50px
+				left: 0
+				background: #fff
+				z-index: 10
+				padding: 20px 0
+				border-bottom: 3px solid $main-color
+				border-left: 1px solid $main-color
+				border-right: 1px solid $main-color
+				transition: all 0.35s
+				a
+					color: #000
+					text-decoration: none
+					white-space: nowrap
+					padding: 10px 15px
+					display: block
+					text-transform: uppercase
+					transition: all 0.35s
+					line-height: 1em
+					font-size: 14px
+					&:hover
+						transition: all 0.35s
+						color: #fff
+						background: $main-color
+				> li
+					&:hover, &.hover
+						a
+							color: #fff
+							background: $main-color
+							transition: all 0.35s
+
+			>li
+				//display: table-cell
+				padding: 14px 15px
+				background: $main-color
+				position: relative
+				&:last-child
+					display: none
+				&:hover
+					> a
+						transition: all 0.35s
+						border-color: #fff
+					.submenu
+						display: block
+						transition: all 0.35s
+
+
+
+				&.active
+					a
+						border-color: #fff
+
+
+				>a
+					color: #fff
+					line-height: 1em
+					text-transform: uppercase
+					text-decoration: none
+					padding-bottom: 6px
+					border-bottom: 2px solid rgba(255, 255, 255, 0)
+					transition: all 0.35s
+
+
+	.top
+		padding: 20px 0
+		.logo
+			margin-right: 50px
+			width: 240px
+			img
+				width: 100%
+		.list_header
+			padding: 0 15px 0 60px
+			border-right:  1px solid #dfebf4
+			vertical-align: middle
+			height: 70px
+
+		.skype
+			border: 0
+
+		.city
+			padding-left: 50px
+			background: url("../img/icons/pointer-icon.png") no-repeat 15px center
+			background-size: 20px auto
+			.title
+				font-size: 14px
+				line-height: 1em
+				//font-family: 'RobotoCondensed-Light', sans-serif
+				margin-top: 20px
+			.list_city
+				position: relative
+				&.open
+					ul
+						display: block
+				.select
+					color: $main-color-hover
+					text-transform: uppercase
+					font-size: 18px
+					line-height: 1em
+					position: relative
+					padding-right: 20px
+					max-width: 105px
+					white-space: nowrap
+					overflow: hidden
+					text-overflow: ellipsis
+					span.select_toggle
+						position: absolute
+						right: 0
+						top: 50%
+						margin-top: -10px
+						display: inline-block
+						width: 20px
+						height: 20px
+						cursor: pointer
+
+						&:after
+							content: ''
+							width: 0
+							height: 0
+							border-top: 6px solid $main-color-hover
+							border-left: 4px solid transparent
+							border-right: 4px solid transparent
+							position: absolute
+							top: 50%
+							right: 5px
+							margin-top: -3px
+
+				ul
+					display: none
+					position: absolute
+					background: #fff
+					z-index: 2
+					padding: 10px
+					left: -10px
+					top: 18px
+					border-radius: 0 0 5px 5px
+					width: calc( 100% + 10px)
+					li
+						margin-bottom: 10px
+
+						white-space: nowrap
+						text-overflow: ellipsis
+						overflow: hidden
+						&:last-child
+							margin-bottom: 0
+						&.active
+							display: none
+						a
+							font-size: 18px
+							line-height: 1em
+							color: $main-color-hover
+							text-transform: uppercase
+							text-decoration: none
+
+		.phone
+			background: url("../img/icons/phone-icon.png") no-repeat 15px center
+			background-size: 30px auto
+			.list_phone
+				position: relative
+
+				margin-top: 20px
+				&.open
+					ul
+						display: block
+
+			.select
+				padding-right: 20px
+				position: relative
+				a
+					display: inline-block
+
+				span.select_toggle
+					position: absolute
+					right: 0
+					top: 50%
+					margin-top: -10px
+					display: inline-block
+					width: 20px
+					height: 20px
+					cursor: pointer
+
+					&:after
+						content: ''
+						width: 0
+						height: 0
+						border-top: 6px solid $main-color-hover
+						border-left: 4px solid transparent
+						border-right: 4px solid transparent
+						position: absolute
+						top: 50%
+						right: 5px
+						margin-top: -3px
+				a
+					color: $main-color-hover
+					font-size: 24px
+					line-height: 1em
+					text-decoration: none
+			ul
+				display: none
+				position: absolute
+				background: #fff
+				z-index: 2
+				padding: 10px
+				left: -10px
+				top: 26px
+				border-radius: 0 0 5px 5px
+				width: calc( 100% + 10px)
+				li
+					margin-bottom: 10px
+					&:last-child
+						margin-bottom: 0
+				a
+					color: $main-color-hover
+					font-size: 24px
+					line-height: 1em
+					text-decoration: none
+
+
+
+		.email, .skype
+
+
+			a
+				color: $main-color-hover
+				font-size: 18px
+				line-height: 1em
+				text-transform: uppercase
+				text-decoration: none
+				margin-top: 25px
+				display: block
+		.email
+			background: url("../img/icons/mail-icon.png") no-repeat 15px center
+			background-size: 30px auto
+		.skype
+			background: url("../img/icons/skype-icon.png") no-repeat 15px center
+			background-size: 30px auto
+
+		.lang
+			margin-left: 15px
+			position: relative
+			margin-top: 17px
+			&.open
+				//.select
+					span.select_toggle
+						&:after
+							border-bottom: 6px solid $main-color
+							border-top: 0
+							//transition: all 0.35s
+				ul
+					display: block
+					transition: all 0.35s
+			.select
+				position: relative
+				border: 2px solid $main-color
+				background: #fff
+				color: $main-color
+				font-size: 18px
+				text-transform: uppercase
+				border-radius: 4px
+				width: 50px
+				line-height: 26px
+				padding-right: 17px
+				padding-left: 10px
+				//text-align: right
+
+				span.select_toggle1
+					position: absolute
+					right: 0
+					top: 50%
+					margin-top: -10px
+					display: inline-block
+					width: 20px
+					height: 20px
+					cursor: pointer
+
+					&:after
+						content: ''
+						width: 0
+						height: 0
+						border-top: 6px solid $main-color
+						border-left: 4px solid transparent
+						border-right: 4px solid transparent
+						position: absolute
+						//transition: all 0.35s
+						top: 50%
+						right: 5px
+						margin-top: -3px
+
+			ul
+				display: none
+				transition: all 0.35s
+				position: absolute
+				background: $main-color
+				z-index: 2
+				padding: 0 10px
+				left: 0
+				width: 50px
+				top: 26px
+				border-radius: 0 0 5px 5px
+				li
+					background: $main-color
+					&.active
+						display: none
+					a
+						color: #fff
+						font-size: 18px
+						text-transform: uppercase
+						line-height: 26px
+						text-decoration: none
+
+
+
+
+main
+
+	.menu
+		padding: 0 65px 100px
+		.menu-icon
+			display: none
+		>ul
+			li
+				display: block
+				margin-bottom: 20px
+				> ul
+					margin-top: 20px
+					margin-left: 20px
+				a
+					color: $base-font-color
+					font-size: 14px
+					transition: all 0.35s
+					text-decoration: none
+
+					&:hover
+						color: $main-color-hover
+						transition: all 0.35s

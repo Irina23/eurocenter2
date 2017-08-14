@@ -1,0 +1,15 @@
+$fonts-root: '../fonts/'
+
+// http://www.font2web.com/
+@mixin add-font ($name, $path, $style, $weight)
+	@font-face
+		font-family: $name
+		src: url($fonts-root + $path + $name + ".eot")
+		src: url($fonts-root + $path + $name + ".eot?#iefix")format("embedded-opentype"), url($fonts-root + $path + $name + ".woff") format("woff"), url($fonts-root + $path + $name + ".ttf") format("truetype"), url($fonts-root + $path + $name + ".otf") format("otf"), url($fonts-root + $path + $name + ".svg") format("svg")
+		font-style: $style
+		font-weight: $weight
+
+// @include add-font ("fontName", "fontCatalog/fileName", normal, normal )
+@include add-font ("RobotoCondensed-Light", "", normal, normal )
+@include add-font ("RobotoCondensed-Regular", "", normal, normal )
+@include add-font ("RobotoCondensed-Bold", "", normal, normal )

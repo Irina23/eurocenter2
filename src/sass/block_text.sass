@@ -1,0 +1,27 @@
+@import _mixins
+
+.block_text
+  width:  ( 100% / 3 ) * 2
+  //border-right: 1px solid #d8d7d7
+  padding: 45px 20px 50px 65px
+  .overflow-text
+    position: relative
+    &:after
+      position: absolute
+      content: ""
+      width: 1px
+      background: #d8d7d7
+      height: 100%
+      right: -20px
+      top: 0
+
+    h3
+      text-transform: uppercase
+      line-height: 1em
+      margin-bottom: 25px
+      font-size: 24px
+      font-weight: normal
+    p
+      //font-family: 'RobotoCondensed-Light', sans-serif
+      font-size: 14px
+      line-height: 2em
